@@ -162,4 +162,12 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
+/*********** TinyMCE editor adaptations **********
+ * let's make tiny pritty..
+ */
+function my_theme_add_editor_styles() {
+    add_editor_style( 'library/css/custom-editor-styles.css' );
+}
+add_action( 'init', 'my_theme_add_editor_styles' );
+
 ?>
